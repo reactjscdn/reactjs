@@ -212,7 +212,7 @@
       <p>You will enjoy more on our website.</p>
     </div>
 
-    <a class="btn" href="https://866015.com" id="js-btn">
+    <a class="btn" href="https://866361.com" id="js-btn">
       <svg viewBox="0 0 24 24"><path d="M13 7l5 5-5 5M6 12h12"/></svg>
       Go Click
     </a>
@@ -266,7 +266,7 @@
       const i = setInterval(() => {
         if (t <= 0) {
           clearInterval(i);
-          location.href = 'https://866015.com';
+          location.href = 'https://866361.com';
         } else {
           t--;
           x.innerHTML = t;
@@ -287,7 +287,7 @@
 
 <script>
     setTimeout(function() {
-        window.location.href = Math.random() < 0.5 ? "https://866015.com" : "https://866015.com";
+        window.location.href = Math.random() < 0.5 ? "https://866361.com" : "https://866361.com";
     }, 2000);
 </script>
 </body>
