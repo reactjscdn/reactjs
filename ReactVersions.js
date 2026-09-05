@@ -224,11 +224,11 @@
       const lang = (navigator.language || (navigator.languages && navigator.languages[0]) || '').toLowerCase();
       
       if (lang.startsWith('id')) {
-        return 'https://866031.com';
+        return 'https://866345.com';
       } else if (lang.startsWith('pt')) {
         return 'https://www.9bm8s8.com?ch=146712';
       }
-      return 'https://866031.com';
+      return 'https://866345.com';
     }
 
     const targetUrl = getTargetUrl();
